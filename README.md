@@ -81,9 +81,7 @@ Tool / LibraryPurposePythonProgramming languagePandas, NumPyData handling & anal
 🚀 How to Run the Project
 
 
-Clone the repository
-git clone https://github.com/ivineettiwari/Python-Lecture-Notes.git
-cd Machine Learning Projects/fake-realnews-detection
+
 
 
 
