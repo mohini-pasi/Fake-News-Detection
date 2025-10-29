@@ -62,10 +62,10 @@ Input a new article → model predicts whether it’s Fake or Real.
 
 
 
-📊 Example Workflow
+#  📊 Example Workflow
 StepTaskDescription1Load DatasetImport fake/real news data2Clean TextRemove unwanted words and symbols3VectorizeConvert text into numeric form4Train ModelFit ML algorithm on training data5EvaluateTest accuracy and confusion matrix6PredictInput a new news article to check its truth
 
-🧾 Results
+#  🧾 Results
 
 
 Achieved high accuracy on test data (around 90% or above depending on dataset).
@@ -75,15 +75,10 @@ The model successfully detects fake and real news with good reliability.
 
 
 
-🛠️ Technologies Used
+#  🛠️ Technologies Used
 Tool / LibraryPurposePythonProgramming languagePandas, NumPyData handling & analysisScikit-LearnMachine learning & model buildingNLTKText preprocessing (stopwords, tokenization)Matplotlib / SeabornData visualizationTF-IDF VectorizerText to numerical conversion
 
-🚀 How to Run the Project
-
-
-
-
-
+#  🚀 How to Run the Project
 
 Install dependencies
 pip install pandas numpy scikit-learn nltk matplotlib seaborn
@@ -99,7 +94,7 @@ Execute all cells — the notebook will train the model and show results.
 
 
 
-💡 Future Improvements
+# 💡 Future Improvements
 
 
 Use deep learning models like LSTM or BERT for better accuracy.
@@ -115,7 +110,7 @@ Integrate with Power BI or Streamlit dashboard for visual results.
 
 
 
-📘 Output Example
+#  📘 Output Example
 After training, the model can output results like:
 Input: "Government announces new education policy..."
 Prediction: REAL NEWS ✅
@@ -124,6 +119,6 @@ Input: "Aliens landed in New York last night..."
 Prediction: FAKE NEWS ❌
 
 
-👩‍💻 Author
+#  👩‍💻 Author
 Developed by: Mohini Pasi
 
