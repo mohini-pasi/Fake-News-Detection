@@ -59,10 +59,15 @@ So we can train on one part and test on unseen data.
 Several machine learning algorithms are usually tested:
 
 Algorithm	Description
+
 Logistic Regression	Works very well for text classification
+
 Naive Bayes (MultinomialNB)	Simple and fast for text data
+
 Random Forest	Ensemble model with many decision trees
+
 Support Vector Machine (SVM)	Works well with high-dimensional data like text
+
 K-Nearest Neighbors (KNN)	Slower and less effective for large text data
 
 
@@ -72,13 +77,19 @@ K-Nearest Neighbors (KNN)	Slower and less effective for large text data
 In the original notebook and similar Kaggle datasets, the accuracy of models is approximately:
 
 Algorithm	Average Accuracy
+
 Logistic Regression	⭐ ~92–95%
+
 Multinomial Naive Bayes	~88–90%
+
 Random Forest	~85–88%
+
 SVM (Linear)	~91–93%
+
 KNN	~70–75%
 
 # ✅ Best performing algorithm:
+
 Logistic Regression with TF-IDF Vectorizer usually gives the highest and most stable accuracy (around 94–95%) for fake news detection.
 
 # 🧠 Why Logistic Regression Works Best
@@ -92,10 +103,13 @@ It’s simple, interpretable, and avoids overfitting better than Random Forest o
 Naive Bayes is fast but slightly less accurate.
 
 # 🔍 Example Prediction
+```bash
 text = ["Aliens landed in New York last night!"]
-pred = model.predict(vectorizer.transform(text))
-print(pred)  # Output: ['FAKE']
 
+pred = model.predict(vectorizer.transform(text))
+
+print(pred)  # Output: ['FAKE']
+```
 
 # Output → FAKE 🚫
 
@@ -112,22 +126,32 @@ nltk → Text preprocessing (stopwords, tokenization)
 matplotlib / seaborn → Visualization
 
 # 🧾 Summary
+
 Step	Description
+
 Preprocess	Clean and prepare text
+
 Vectorize	Convert text → numeric TF-IDF
+
 Train	Logistic Regression model
+
 Evaluate	Accuracy ≈ 95%
+
 Predict	Classify new news as Fake/Real
 
 #  🚀 How to Run the Project
 
 Install dependencies
-pip install pandas numpy scikit-learn nltk matplotlib seaborn
 
+```bash
+pip install pandas numpy scikit-learn nltk matplotlib seaborn
+```
 
 
 Run the Jupyter Notebook
+```bash
 jupyter notebook fake-realnews-detection.ipynb
+```
 
 
 
