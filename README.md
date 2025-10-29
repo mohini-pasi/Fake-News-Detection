@@ -60,15 +60,15 @@ Several machine learning algorithms are usually tested:
 
 Algorithm	Description
 
-Logistic Regression	Works very well for text classification
+Logistic Regression :	Works very well for text classification
 
-Naive Bayes (MultinomialNB)	Simple and fast for text data
+Naive Bayes : (MultinomialNB)	Simple and fast for text data
 
-Random Forest	Ensemble model with many decision trees
+Random Forest	: Ensemble model with many decision trees
 
-Support Vector Machine (SVM)	Works well with high-dimensional data like text
+Support Vector  Machine (SVM) :	Works well with high-dimensional data like text
 
-K-Nearest Neighbors (KNN)	Slower and less effective for large text data
+K-Nearest Neighbors (KNN)	: Slower and less effective for large text data
 
 
 
