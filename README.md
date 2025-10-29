@@ -1,60 +1,131 @@
-# Fake-News-Detection
-# 🧠 Fake News Detection using PassiveAggressiveClassifier
+📰 Fake News Detection using Machine Learning
+📌 Project Overview
+This project aims to detect whether a news article is Fake or Real using Machine Learning and Natural Language Processing (NLP) techniques.
+Fake news spreads quickly on the internet, especially through social media. To stop misinformation, we train a model that learns the patterns and words used in fake news and predicts if a new article is genuine or not.
 
-This project is a machine learning-based fake news detection system that uses Natural Language Processing (NLP) and the PassiveAggressiveClassifier to distinguish between real and fake news articles.
+🧠 Objective
+To build a machine learning model that classifies news as “Fake” or “Real” based on its text content.
 
-## 📂 Dataset
-The dataset is a CSV file (`news.csv`) containing:
-- `title`: Title of the news article
-- `text`: Full text of the news article
-- `label`: Either `FAKE` or `REAL`
+🧩 Steps Involved
+1. Data Collection
 
-## 🚀 Features
-- TF-IDF vectorization of text
-- Train/test split (80/20)
-- Model training using PassiveAggressiveClassifier
-- Evaluation using accuracy and confusion matrix
-- Visualization using seaborn and matplotlib
 
-## 🛠️ Tech Stack
-- Python 3.x
-- Pandas
-- scikit-learn
-- Matplotlib
-- Seaborn
+The dataset contains thousands of news articles labeled as Fake or Real.
 
-## 📊 Model Overview
-The **PassiveAggressiveClassifier** is used for online learning and is particularly suited for large-scale and real-time classification tasks.
 
-## 📈 Results
-The model achieves high accuracy and shows a clear distinction between real and fake news, as seen in the confusion matrix visualization.
+Each record has the title, text, and label of the news.
 
-## ▶️ How to Run
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/yourusername/FakeNewsDetection.git
-   cd FakeNewsDetection
-   ```
+2. Data Cleaning & Preprocessing
 
-2. Install requirements:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-3. Run the notebook:
-   ```bash
-   jupyter notebook FakeNewsDetection.ipynb
-   ```
+Remove punctuation, special symbols, and stopwords.
 
-## 📁 Files
-- `FakeNewsDetection.ipynb`: Main project notebook
-- `news.csv`: Dataset (not included – you must add it manually)
-- `FakeNewsDetection_Presentation.pptx`: Presentation
-- `README.md`: Project documentation
 
-## 📜 License
-This project is open-source and available under the MIT License.
+Convert all words to lowercase.
 
-## 🙌 Acknowledgements
-Dataset source: [Kaggle or other publicly available dataset]
+
+Tokenize and clean text to make it ready for analysis.
+
+
+3. Text Vectorization
+
+
+Convert text into numerical form using TF-IDF Vectorizer (Term Frequency–Inverse Document Frequency).
+
+
+This helps the machine learning model understand the importance of words.
+
+
+4. Model Building
+
+
+Used algorithms like Logistic Regression or Naive Bayes for classification.
+
+
+The model learns from training data to detect patterns that differentiate fake and real news.
+
+
+5. Model Evaluation
+
+
+Tested the model on unseen (test) data.
+
+
+Evaluated using Accuracy, Precision, Recall, F1-score, and Confusion Matrix.
+
+
+6. Prediction
+
+
+Input a new article → model predicts whether it’s Fake or Real.
+
+
+
+📊 Example Workflow
+StepTaskDescription1Load DatasetImport fake/real news data2Clean TextRemove unwanted words and symbols3VectorizeConvert text into numeric form4Train ModelFit ML algorithm on training data5EvaluateTest accuracy and confusion matrix6PredictInput a new news article to check its truth
+
+🧾 Results
+
+
+Achieved high accuracy on test data (around 90% or above depending on dataset).
+
+
+The model successfully detects fake and real news with good reliability.
+
+
+
+🛠️ Technologies Used
+Tool / LibraryPurposePythonProgramming languagePandas, NumPyData handling & analysisScikit-LearnMachine learning & model buildingNLTKText preprocessing (stopwords, tokenization)Matplotlib / SeabornData visualizationTF-IDF VectorizerText to numerical conversion
+
+🚀 How to Run the Project
+
+
+Clone the repository
+git clone https://github.com/ivineettiwari/Python-Lecture-Notes.git
+cd Machine Learning Projects/fake-realnews-detection
+
+
+
+Install dependencies
+pip install pandas numpy scikit-learn nltk matplotlib seaborn
+
+
+
+Run the Jupyter Notebook
+jupyter notebook fake-realnews-detection.ipynb
+
+
+
+Execute all cells — the notebook will train the model and show results.
+
+
+
+💡 Future Improvements
+
+
+Use deep learning models like LSTM or BERT for better accuracy.
+
+
+Add a Flask or Django web app for live predictions.
+
+
+Include more datasets for stronger generalization.
+
+
+Integrate with Power BI or Streamlit dashboard for visual results.
+
+
+
+📘 Output Example
+After training, the model can output results like:
+Input: "Government announces new education policy..."
+Prediction: REAL NEWS ✅
+
+Input: "Aliens landed in New York last night..."
+Prediction: FAKE NEWS ❌
+
+
+👩‍💻 Author
+Developed by: Mohini Pasi
+
