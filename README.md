@@ -111,9 +111,9 @@ pred = model.predict(vectorizer.transform(text))
 print(pred)  # Output: ['FAKE']
 ```
 
-# Output → FAKE 🚫
+Output → FAKE 🚫
 
-🛠 Libraries Used
+# 🛠 Libraries Used
 
 pandas → Data handling
 
