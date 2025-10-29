@@ -68,7 +68,7 @@ Random Forest	: Ensemble model with many decision trees
 
 Support Vector  Machine (SVM) :	Works well with high-dimensional data like text
 
-K-Nearest Neighbors (KNN)	: Slower and less effective for large text data
+Decision Tree: Easy to interpret
 
 
 
