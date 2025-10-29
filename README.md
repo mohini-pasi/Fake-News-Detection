@@ -78,15 +78,15 @@ In the original notebook and similar Kaggle datasets, the accuracy of models is 
 
 Algorithm	Average Accuracy
 
-Logistic Regression	⭐ ~92–95%
+Logistic Regression (Tuned, TF-IDF) ⭐ 93.29% ✅ (Best Model)
 
-Multinomial Naive Bayes	~88–90%
+SVM (Support Vector Machine, TF-IDF) — 92.68%
 
-Random Forest	~85–88%
+Random Forest (TF-IDF) — 90.39%
 
-SVM (Linear)	~91–93%
+Naive Bayes (TF-IDF) — 87.33%
 
-KNN	~70–75%
+Decision Tree (TF-IDF) — 80.37%
 
 # ✅ Best performing algorithm:
 
